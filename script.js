@@ -70,7 +70,7 @@ function generateCard(data) {
 }
 
 function getPokemonData() {
-    let id = Math.floor(Math.random() * 150) + 1;
+    let id = Math.floor(Math.random() * 1000) + 1;
     console.log(id);
     // Combine the URL with ID
     const finalUrl = url + id;
