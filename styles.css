@@ -24,6 +24,22 @@ body {
     border-radius: 10px;
 }
 
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon-id {
+    width: 80px;
+    background-color: #ffffff;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-right: auto;
+    font-weight: 400;
+    text-align: center;
+}
+
 #card {
     position: relative;
     width: 100%;

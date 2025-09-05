@@ -32,15 +32,22 @@ function generateCard(data) {
     const statAttack = data.stats[1].base_stat;
     const statDefense = data.stats[2].base_stat;
     const statSpeed = data.stats[5].base_stat;
+    const id = data.id;
 
     const themeColor = typeColor[data.types[0].type.name];
     console.log(themeColor);
 
     card.innerHTML = `
-            <p class = "hp">
-                <span>HP</span>
-                ${hp}
-            </p>
+            <div class = "top-section">
+                <p class = "pokemon-id">
+                    <span>#</span>
+                    ${id}
+                </p>
+                <p class = "hp">
+                    <span>HP</span>
+                    ${hp}
+                </p>
+            </div>
             <img src = ${imgSrc} alt = "A picture of the Pokemon" />
             <h2 class = "pokemon-name">${pokemonName}</h2>
             <div class="types">
